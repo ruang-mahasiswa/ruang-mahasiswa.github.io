@@ -433,9 +433,7 @@ button:hover {
 
     }
     button, .btn {
-        padding: 7px 20px !important;
-        box-sizing: initial;
-        font-size: 16px;
+        padding: 10px 16px !important;
     }
     
     .about-us {
