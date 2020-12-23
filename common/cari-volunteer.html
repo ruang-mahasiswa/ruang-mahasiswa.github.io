@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cari Volunteer | Ruang Mahasiswa</title>
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        @media screen and (max-width: 768px){
+            .img {
+                display: none;
+            }
+            .col-2-1 {
+                width: 100%;
+            }
+            .stroke {
+                display: none;
+            }
+            .col-3-1 {
+                display: none;
+            }
+            .conversation {
+                display: none;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<script type="text/javascript">
+    let currentTab = 1;
+</script>
+<div class="nav header" id="nav">
+    <a class="nav-brand" href="../index.html"><img src="../img/logo.png" width="100" alt=""></a>
+    <div class="menu-hamburger" onclick="toggleMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    <div class="nav-list float-right">
+        <a href="../index.html">Home</a>
+        <a href="cari-beasiswa.html">Cari Beasiswa</a>
+        <a href="cari-volunteer.html">Cari Volunteer</a>
+    </div>
+
+    <ul class="nav-menu" id="menu-list">
+        <li class="menu-item" onclick="openLocation('#')">My Account</li>
+        <li class="menu-item" onclick="openLocation('../about.html')">About Us</li>
+        <li class="menu-item" onclick="openLocation('customer-support.html')">Customer Support</li>
+    </ul>
+</div>
+
+<div class="container">
+    <div style="margin-top: 70px"></div>
+    <ul class="flex flex-center">
+        <li id="t-1" class="tab-item active-tab" onclick="toggleTab('1')">Volunteer Edukasi</li>
+        <li id="t-2" class="tab-item" onclick="toggleTab('2')">Volunteer Konservasi</li>
+        <li id="t-3" class="tab-item" onclick="toggleTab('3')">Volunteer Humanis</li>
+        <li id="t-4" class="tab-item" onclick="toggleTab('4')">Volunteer Acara</li>
+    </ul>
+        <div class="col-3-2 margin-auto">
+            <div class="tabs">
+                <div id="tab-1">
+                    <p class="fz-14 text-center">Belum Ada informasi terkait.</p>
+                </div>
+                <div id="tab-2" class="display-none">
+                    <p class="fz-14 text-center">Belum Ada informasi terkait.</p>
+                </div>
+                <div id="tab-3" class="display-none">
+                    <div class="row">
+                        <div class="col-3-2">
+                            <div class="flex flex-left flex-column">
+                                <p class="fz-24 fw-400">OPEN RECRUITMENT RUMAH DISABILITAS</p>
+                                <p class="fz-14 text-justify"><strong class="fz-18">Halo Sobat RD!</strong><br><br>
+                                    Akhirnya Open Recruitment Rumah Disabilitas Batch 2 telah dibuka! Yuk segera bergabung di kepengurusan Rumah Disabilitas 2020-2021.
+                                    <br><br>Pendaftaran dimulai dari tanggal 03-24 November 2020.<br><br>
+                                    Yuk segera daftar kami tunggu kontribusi sobat RD di dalam kepengurusan Rumah Disabilitas Periode 2020-2021.
+                                </p>
+                                <button class="margin-auto btn btn-fill ">DAFTAR</button>
+                            </div>
+                        </div>
+                        <div class="col-3-1 text-center">
+                            <img class="img img-round" src="../img/charity.png"  style="width: 80%; margin: 10% auto" alt="" width="29">
+                        </div>
+                    </div>
+                </div>
+                <div id="tab-4" class=" display-none">
+                    <p class="fz-14 text-center">Belum Ada informasi terkait.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-3-1"></div>
+
+</div>
+
+<p class="fz-96 fw-400 white text-shadow stroke" style="position: absolute; bottom: -30px; left: 10px">VOLUNTEER</p>
+<img src="../img/conversation.png" style="position:fixed; right: 30px; bottom: 30px; cursor: pointer" onclick="openLocation('question-box.html')">
+<script src="../js/renderer.js"></script>
+
+
+</body>
+</html>

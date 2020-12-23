@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cari Beasiswa | Ruang Mahasiswa</title>
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .conversation {
+            position:fixed;
+            left: 30px;
+            bottom: 30px;
+            cursor: pointer;
+        }
+        @media screen and (max-width: 768px){
+            .img {
+                display: none;
+            }
+            .col-2-1 {
+                width: 100%;
+            }
+            .stroke {
+                display: none;
+            }
+            .col-3-1 {
+                display: none;
+            }
+            .conversation {
+                right: 30px !important;
+                left: auto;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<script type="text/javascript">
+    let currentTab = 1;
+</script>
+<div class="nav header" id="nav">
+    <a class="nav-brand" href="../index.html"><img src="../img/logo.png" width="100" alt=""></a>
+    <div class="menu-hamburger" onclick="toggleMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    <div class="nav-list float-right">
+        <a href="../index.html">Home</a>
+        <a href="cari-beasiswa.html">Cari Beasiswa</a>
+        <a href="cari-volunteer.html">Cari Volunteer</a>
+    </div>
+
+    <ul class="nav-menu" id="menu-list">
+        <li class="menu-item" onclick="openLocation('#')">My Account</li>
+        <li class="menu-item" onclick="openLocation('../about.html')">About Us</li>
+        <li class="menu-item" onclick="openLocation('customer-support.html')">Customer Support</li>
+    </ul>
+</div>
+<div class="container">
+    <div style="margin-top: 70px"></div>
+    <ul class="flex flex-center">
+        <li id="t-1" class="tab-item active-tab" onclick="toggleTab('1')">Beasiswa Diploma</li>
+        <li id="t-2" class="tab-item" onclick="toggleTab('2')">Beasiswa Sarjana</li>
+        <li id="t-3" class="tab-item" onclick="toggleTab('3')">Beasiswa Dalam Negeri</li>
+        <li id="t-4" class="tab-item" onclick="toggleTab('4')">Beasiswa Luar Negeri</li>
+    </ul>
+    <div class="col-3-2 margin-auto" style="margin-bottom: 30px">
+        <div class="tabs">
+            <div id="tab-1">
+                <p class="fz-14 text-center">Belum Ada informasi terkait.</p>
+            </div>
+            <div id="tab-2" class="display-none">
+                <p class="fz-14 text-center">Belum Ada informasi terkait.</p>
+            </div>
+            <div id="tab-3" class="display-none">
+                <p class="fz-14 text-center">Belum Ada informasi terkait.</p>
+            </div>
+            <div id="tab-4" class=" display-none">
+                <div class="row">
+                    <div class="col-3-1 text-center">
+                        <img class="img img-round" src="../img/oxford.jpeg" style="width: 80%; margin: 10% auto" alt="" width="29">
+                    </div>
+                    <div class="flex flex-left flex-column col-3-2">
+                        <p class="fz-24 fw-400" style="margin-bottom: 0">BEASISWA KULIAH S2 DI OXFORD UNIVERSITY</p>
+                        <p class="fz-12 text-justify"><i><b>"Weidenfeld-Hoffmann Scholarships and Leadership Programme"</b></b></i><br><br>
+                            University of Oxford merupakan salah satu universitas ternama yang terletak di Inggris. Bagi anda yang sedang mencari beasiswa kuliah S2 di Oxford yang dapat membiayai perkuliahan secara keseluruhan, tawaran beasiswa ini bisa dicoba.<br>
+                            Skema Weidenfeld - Hoffmann Scholarships and Leadership Programme ditawarkan bagi lulusan dari negara-negara berkembang (termasuk Indonesia) yang ingin melanjutkan studi Master di University of Oxford untuk tahun akademik 2021 – 2022.<br><br>
+                            Yuk daftar untuk mengetahui informasi lengkapnya!
+                        </p>
+                        <button class="btn btn-fill fw-400" style="margin-right: auto">DAFTAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-3-1"></div>
+
+</div>
+
+<p class="fz-96 fw-400 white text-shadow stroke" style="position: fixed; transform: rotate(-90deg);bottom: 30%; right: -15%;">BEASISWA</p>
+<img class="conversation" src="../img/conversation.png" onclick="openLocation('question-box.html')">
+
+
+
+<script src="../js/renderer.js"></script>
+
+
+</body>
+</html>

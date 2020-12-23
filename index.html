@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ruang Mahasiswa</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <style type="text/css">
+        .fz-96 {
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: rgba(0, 0, 0, 0.7);
+        }
+        .block-sm {
+            display: none !important;
+        }
+        @media screen and (max-width: 768px){
+            .none-sm {
+                display: none !important;
+            }
+            .col-3-2.padding-40 {
+                padding: 0;
+            }
+            .block-sm{
+                display: block !important;
+            }
+            .image-item {
+                width: 33%;
+                padding-top: 33%;
+            }
+            .white.fz-18 {
+                font-size: 14px;
+            }
+
+        }
+
+        .title p {
+            padding-top: 50px;
+        }
+
+        .rect {
+            height: 100%;
+            width: 50%;
+            position: absolute;
+            bottom: 0;
+            opacity: 70%;
+        }
+        .rect-left {
+            left: 0;
+            background-color: #F5A25D70;
+
+        }
+        .rect-right {
+            right: 0;
+            background-color: #679B9B70;
+
+        }
+    </style>
+</head>
+<body>
+<div class="nav header transparent" id="nav">
+    <a class="nav-brand" href="index.html"><img src="img/logo.png" width="100"></a>
+    <div class="menu-hamburger" onclick="toggleMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    <div class="nav-list float-right">
+        <a href="index.html">Home</a>
+        <a href="common/cari-beasiswa.html">Cari Beasiswa</a>
+        <a href="common/cari-volunteer.html">Cari Volunteer</a>
+    </div>
+
+    <ul class="nav-menu" id="menu-list">
+        <li class="menu-item" onclick="openLocation('#')">My Account</li>
+        <li class="menu-item" onclick="openLocation('about.html')">About Us</li>
+        <li class="menu-item" onclick="openLocation('common/customer-support.html')">Customer Support</li>
+    </ul>
+</div>
+<div class="container height-100vh bg-image-1 text-center">
+    <div style="padding-top: 20vh"></div>
+    <p class="fz-48 white" style="line-height: 10px">Embrace Your Future</p>
+    <p class="white fz-18" style="max-width: 600px;padding: 20px 0px; margin: auto">Develop yourself through study abroad, get scholarships and volunteer projects that contribute to the development of countries, organizations, or the success of a particular events.</p>
+    <button class="btn btn-fill fz-14" onclick="openLocation('common/signup.html')">Get Started</button>
+</div>
+<div class="container height-100vh padding-40 row">
+    <div class="none-sm col-3-1 flex flex-column flex-center">
+        <p class="fz-18 fw-400 text-center">TESTIMONIAL</p>
+        <div class="testi-image margin-auto" style="background-image: url('img/Cari_Beasiswa_Humay.jpg')">
+        </div>
+        <button class="btn btn-fill fz-14" style="width: inherit; margin-top: 20px" onclick="openLocation('common/cari-beasiswa.html')">Learn More</button>
+    </div>
+    <div class="col-3-2 padding-40">
+            <div class="title" style="position: relative; height: 100px">
+                <span class="rect rect-left"></span>
+                <p class="fz-48 fw-400 stroke text-center white">CARI BEASISWA</p>
+            </div>
+            <p class="text-justify fz-16">Informasi mengenai berbagai beasiswa yang dapat menyalurkan mahasiswa dengan bidang yang ingin dikuasai serta membantu mahasiswa dalam masalah pendanaan biaya akademik.</p>
+            <div class="images">
+                <div class="image-item float-left" style="background-image: url('img/Poster Beasiswa 1.jpg')"></div>
+                <div class="image-item float-left" style="background-image: url('img/Poster Beasiswa 2.jpg')"></div>
+                <div class="image-item float-left" style="background-image: url('img/Poster Beasiswa 3.jpg')"></div>
+            </div>
+            <button class="block-sm btn btn-fill fz-14" style="width: inherit; margin-top: 20px" onclick="openLocation('common/cari-beasiswa.html')">Learn More</button>
+    </div>
+</div>
+
+<div class="container height-100vh padding-40 row">
+    <div class="col-3-2 padding-40">
+        <div class="title" style="position: relative; height: 100px">
+            <span class="rect rect-right"></span>
+            <p class="fz-48 fw-400 stroke text-center white">CARI VOLUNTEER</p>
+        </div>
+        <p class="text-justify fz-16">Temukan informasi mengenai lowongan volunteer yang bisa membantu mahasiswa berkembang dan membantu sesama lain.</p>
+        <div class="images">
+            <div class="image-item float-left" style="background-image: url('img/Poster Volunteer 1.jpg')"></div>
+            <div class="image-item float-left" style="background-image: url('img/Poster Volunteer 2.jpg')"></div>
+            <div class="image-item float-left" style="background-image: url('img/Poster Volunteer 3.jpg')"></div>
+        </div>
+        <button class="block-sm btn btn-fill fz-14" style="width: inherit; margin-top: 20px" onclick="openLocation('common/cari-volunteer.html')">Learn More</button>
+    </div>
+    <div class="none-sm col-3-1 flex flex-column flex-center">
+        <p class="fz-18 fw-400 text-center">TESTIMONIAL</p>
+        <div class="testi-image margin-auto" style="background-image: url('img/Cari_Volunteer_Sudut.jpeg')">
+        </div>
+        <button class="btn btn-fill fz-14" style="margin-top: 20px" onclick="openLocation('common/cari-volunteer.html')">Learn More</button>
+    </div>
+</div>
+<div class="container height-60vh" style="padding: 0">
+    <div class="row">
+        <div class="col-2-1 flex flex-center text-center">
+            <p class="fz-96 letter-space fw-400 text-shadow white" style="">ABOUT US</p>
+        </div>
+        <div class="col-2-1 flex flex-center">
+            <div class="text-justify about-us">
+                <p>Ruang Mahasiswa merupakan website yang bertujuan untuk mewadahi mahasiswa Indonesia untuk menemukan berbagai informasi mengenai beasiswa dan volunteer yang bermanfaat. Harapannya Ruang Mahasiswa dapat membantu mahasiswa untuk mengembangkan berbagai kemampuannya baik di bidang hard skill maupun soft skill.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="text-left">
+    <div class="row">
+        <div class="col-5-1">
+            <div class="flex flex-left flex-column">
+                <a>Resource</a>
+                <a>Home</a>
+                <a>About Us</a>
+                <a>Contact</a>
+            </div>
+        </div>
+        <div class="none-sm col-5-3">
+            <div class="flex flex-column">
+                <img src="img/rm.png" width="200">
+                <p>Copyright<sup>&copy;</sup> 2020.<br> All Rights Reserved.</p>
+            </div>
+        </div>
+        <div class="col-5-1">
+            <div class="flex flex-left flex-column">
+                <a>Help</a>
+                <a>FAQ</a>
+                <a>Privacy Policy</a>
+                <a>Terms & Condition</a>
+            </div>
+        </div>
+        <div class="block-sm col-5-3" style="margin-top: 20px">
+            <div class="flex flex-column">
+                <img src="img/rm.png" width="200">
+                <p>Copyright<sup>&copy;</sup> 2020.<br> All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<script src="js/renderer.js"></script>
+<script src="js/transparency.js"></script>
+
+</body>
+</html>
