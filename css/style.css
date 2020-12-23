@@ -25,6 +25,7 @@ a{
     outline: none;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
     border: none;
+    box-sizing: border-box;
 }
 
 .btn-fill {
