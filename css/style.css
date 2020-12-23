@@ -415,9 +415,7 @@ button:hover {
         width: 100% !important;
     }
 
-    .height-60vh, .height-100vh {
-        min-height: auto;
-    }
+  
 
     .col-3-1:has(.img) {
         display: none;
